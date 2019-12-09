@@ -18,13 +18,13 @@ APP_NAME=$(ls target|grep .*jar$ );
 PID=$(ps -ef |grep ${APP_NAME} |grep -v grep |awk '{print $2}');
 
 echo " ----------------------------------------"
-echo "|  APP_NAME:"$APP_NAME"  PID:"${PID}  JVM_OPS=${JVM_OPS}"
+echo "|  APP_NAME:"$APP_NAME"  PID:"${PID}  "JVM_OPS"=${JVM_OPS}
 echo " ----------------------------------------"
 
-kill  $PID
+kill  ${PID}
 
 sleep 2s;
 
-nohup  java $JVM_OPS -jar  target/$APP_NAME &
+nohup  java $JVM_OPS -jar  target/${APP_NAME} &
 
 
