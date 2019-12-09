@@ -1,3 +1,6 @@
 # shell
-服务器脚本
-1
+```bash
+    
+wget https://raw.githubusercontent.com/xia-fei/shell/master/start.sh 
+
+```
