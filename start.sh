@@ -13,7 +13,7 @@ fi
 mvn clean package -Dmaven.test.skip=true
 
 JVM_OPS="-Dserver.port=$SERVER_PORT -Xmx64m"
-,
+
 APP_NAME=$(ls target|grep .*jar$ );
 PID=$(ps -ef |grep ${APP_NAME} |grep -v grep |awk '{print $2}');
 
