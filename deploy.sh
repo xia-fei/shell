@@ -3,7 +3,8 @@ basePath=/usr/share/nginx
 
 www-blog(){
 repoName='xia-fei.github.io';
-rm -f $basePath/$repoName
+
+rm -rf $basePath/$repoName
 git clone https://github.com/xia-fei/${repoName}.git $basePath/$repoName
 
 }
